@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing </title>
+</head>
+<body>
+   <div class="textContainer">
+       <div class="text">
+          Javascript!!! 
+       </div>
+   </div>
+</body>
+<style>
+    .textContainer{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .text{
+        width: 22ch;
+        animation: typingEffect 1s steps(25) , blinkEffect 0.5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 1px solid ;
+        font-size: 2em;
+    }
+
+    @keyframes typingEffect{
+        from{
+            width: 0;
+        }
+    }
+    @keyframes blinkEffect{
+        50%{
+            border-color: transparent;
+        }
+    }
+</style>
+</html>
